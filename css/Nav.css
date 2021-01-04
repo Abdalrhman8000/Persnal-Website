@@ -1,0 +1,136 @@
+
+
+/*---------------------Nav_Star---------------------*/
+
+nav{
+    height: 70px;
+    z-index: 100;
+    background:var(--black-color);
+    overflow: hidden;
+}
+
+
+
+.logo-div-nav img{
+    filter: hue-rotate(100deg);
+    max-width: 30px;
+    max-height: 30px;
+}
+
+
+.logo-div-nav span {
+   position: relative;
+   bottom: 10px;
+   left: 5px;
+   display: inline-block;
+   color: var(--dark-blue);
+   font-size: 17px;
+   font-weight: 700;
+}
+
+i{
+    cursor: pointer;
+}
+
+.logo-div-nav{
+    float: left;
+    width: 20%;
+    margin:1% 0 0 10% ;
+    line-height: 70px;
+}
+
+nav ul{
+    float: right;
+    width: 50%;
+    padding-top:20px ;
+}
+
+
+nav li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+nav ul  li a{
+    display: inline-block;
+    padding:10px 16px;
+    text-transform: capitalize;
+    color: var(--dark-blue);
+    font-size: 17px;
+    transform-origin:left;
+    opacity: .9;
+    position: relative;
+    font-weight: 700;
+}
+
+nav ul  li a::after{
+    content: "";
+    width: 60%;
+    height: 2.5px;
+    bottom:4px;
+    left: 15px;
+    position: absolute;
+    background-color: var(--canary-color);
+    transition: all .5s ease-in-out;
+   transform: scale3d(0,1,0);
+   border-top-left-radius:1px;
+   border-top-right-radius:1px;
+}
+
+nav ul  li a:hover::after{
+   transform: scale3d(1,1,1);
+}
+
+
+
+
+.div-nav-icons{
+    float: right;
+    width: 20%;
+    line-height: 70px;
+    line-height: 100px;
+    
+}
+
+.div-nav-icons button{
+    border: 0;
+    border-radius:2px;
+    background-color:var(--white-color);
+    padding: 13px 45px;
+    position: relative;
+    font-weight: 700;
+}
+
+
+nav label{
+    float:right;
+    margin-right:10% ;
+    
+}
+#icon-1{
+    font-size: 27px;
+    color: var(--white-color);
+    display: none;
+    line-height: 100px;
+
+}
+
+#icon-2{
+    font-size: 27px;
+    color: var(--white-color);
+    display: none;
+    line-height: 100px;
+}
+
+nav input{
+    display: none;
+}
+
+/*---------------------Nav_End---------------------*/
+
+
+
+
+

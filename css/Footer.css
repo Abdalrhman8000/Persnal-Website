@@ -1,0 +1,8 @@
+footer{
+    flex-direction: column;
+    height: 200px;
+    background-color: var(--dark-blue);
+    color: var(--white-color);
+    font-size: 13px;
+}
+

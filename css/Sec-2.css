@@ -1,0 +1,157 @@
+
+
+.sec-2{
+    text-align: center;
+}
+
+.sec-2 h1{
+    position: relative;
+    display: inline;
+    font-size: 35px;
+}
+
+.h2-animation{
+    animation:animate-sec-2 1s 1 linear forwards ;
+    animation-delay: .1;
+}
+
+
+@keyframes animate-sec-2{
+    0%{
+       opacity: 0;
+       top: -100px;
+    }
+
+    50%{
+        top: 0px;
+        opacity: 1;
+    }
+
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+.sec-2 h1::after{
+   content: "";
+   position: absolute;
+   bottom:-5px;
+   left:0;
+   height: 3px;
+   width: 100%;
+   background-color: var(--light-blue);
+}
+
+
+.sec-2-img{
+    width: 100%;
+}
+
+.sec-2-img-animation{
+    animation:sec-2-img-animate-scale  2s linear  1 forwards ;
+    animation-delay:.2;
+}
+
+@keyframes sec-2-img-animate-scale{
+    0%{
+    position: relative;
+    left: -200px;
+    opacity: 0;
+    }
+
+    50%{
+        position: relative;
+        left:0;
+        opacity: 1;
+
+    }
+
+    100%{
+        position: relative;
+        left:0;
+        opacity: 1;
+    }
+}
+
+.sec-2-img img{
+    width: 100%;
+    clip-path: inset(6% 6% 9% 8%);
+}
+
+
+.sec-2-p-h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.sec-2-animation-effcet-h1-p{
+    animation:animate-scale  2s linear  1 forwards ;
+    animation-delay:.1s ;
+}
+
+
+.sec-2-p-h2 h2{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+@media(min-width:768px) and (max-width:991px){
+    .sec-2 h1{
+        bottom: 50px;
+    }
+
+
+    .sec-2-p-h2{
+        padding-left: 50px;
+        width: 80%;
+        line-height: 25px;
+    }
+
+
+    .sec-2-img{
+        width: 40%;
+    }
+    
+}
+
+
+
+@media(min-width:268px) and (max-width:767px){
+    .sec-2 h1{
+        bottom: 50px;
+    }
+
+    .sec-2 .row{
+        flex-direction:column;
+    }
+
+
+    .sec-2-p-h2{
+        padding-left: 50px;
+        width: 100%;
+        font-size: 10px;
+        line-height: 25px;
+    }
+
+    .sec-2-p-h2 h2{
+        font-size:20px ;
+    }
+
+
+    .sec-2-img{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        padding-top: 20px;
+    }
+    
+    .sec-2-img img{
+        width: 50%;
+    }
+}

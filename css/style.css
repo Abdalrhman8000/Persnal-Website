@@ -1,0 +1,23 @@
+.icon-back{
+    position: fixed;
+    bottom: 30px;
+    right: -10px;
+    z-index: 10000;
+    opacity: 0;
+    user-select: none;
+}
+
+.icon-back i {
+    font-size: 30px;
+    color: var(--dark-blue);
+}
+
+.add-icon{
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 10000;
+    opacity: 1;
+    user-select:auto;
+}

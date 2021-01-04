@@ -1,0 +1,239 @@
+.sec-3{
+    text-align: center;
+}
+
+
+.sec-3-animatin-h1-change{
+    font-size: 35px;
+    position: relative;
+    display: inline;
+    bottom: 20px;
+}
+
+.h2-animation{
+    animation:animate-sec-2 1s 1 linear forwards ;
+    animation-delay: .1;
+}
+
+.sec-3-animatin-h1-change::after{
+    content: "";
+    position: absolute;
+    bottom:-5px;
+    left:0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--light-blue);
+}
+
+
+.sec-3-p-h1{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.sec-3-p-h1 h1{
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.sec-3-p-h1 p{
+    padding-bottom: 30px;
+    line-height: 27px;
+}
+
+.html-skill{
+    height: 36px;
+    padding: 7px 10px;
+    position: relative;
+    width: 60%;
+    background-color:var(--dark-blue);
+}
+
+.html-skill::after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 92%;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    height:5px;
+    background-color: var(--light-blue);
+    position: absolute;
+}
+.html-skill i{
+    color: var(--light-blue);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.html-skill i span{
+    color: var(--canary-color);
+    font-size: 13px;
+    padding-left:320px;
+}
+
+
+.css-skill{
+    height: 36px;
+    padding: 7px 10px;
+    width: 60%;
+    background-color:var(--dark-blue);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.css-skill::after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 82%;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    height:5px;
+    background-color: var(--light-blue);
+    position: absolute;
+}
+
+.css-skill i{
+    color: var(--light-blue);
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+
+.css-skill i span{
+    color: var(--canary-color);
+    font-size: 13px;
+    padding-left:300px;
+}
+
+
+.js-skill{
+    height: 36px;
+    padding: 7px 10px;
+    width: 60%;
+    background-color:var(--dark-blue);
+    position: relative;
+}
+
+
+.js-skill::after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 65%;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    height:5px;
+    background-color: var(--light-blue);
+    position: absolute;
+}
+
+.js-skill i{
+    color: var(--light-blue);
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+
+.js-skill i span{
+    color: var(--canary-color);
+    font-size: 13px;
+    padding-left:220px;
+}
+
+.sec-3-img-animation{
+    animation:sec-2-img-animate-scale-2  2s linear  1 forwards ;
+    animation-delay:.2;
+}
+
+
+.sec-3-animation-effcet-h1-p{
+    animation:animate-scale  3s linear  1 forwards ;
+    animation-delay:.1s ;
+}
+
+
+@keyframes sec-2-img-animate-scale-2{
+    0%{
+    position: relative;
+    right: -200px;
+    opacity: 0;
+    }
+
+    50%{
+        position: relative;
+        right:0;
+        opacity: 1;
+
+    }
+
+    100%{
+        position: relative;
+        right:0;
+        opacity: 1;
+    }
+}
+
+@media (min-width:992px) and (max-width:1269px){
+    .html-skill i span{
+        padding-left: 210px;
+    }
+
+    .css-skill i span{
+        padding-left: 190px;
+    }
+
+    .js-skill i span{
+        padding-left:110px;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:991px){
+    .html-skill i span{
+        padding-left: 120px;
+    }
+
+    .css-skill i span{
+        padding-left: 90px;
+    }
+
+    .js-skill i span{
+        padding-left:50px;
+    }
+}
+
+
+@media (min-width:268px) and (max-width:767px){
+   .sec-3 .row{
+       flex-direction: column;
+   }
+
+   .sec-3 p{
+       font-size: 11px;
+   }
+    .html-skill i span{
+        padding-left: 30px;
+    }
+
+    .css-skill i span{
+        padding-left: 20px;
+    }
+
+    .js-skill i span{
+        padding-left:10px;
+    }
+
+    .sec-3-img{
+        width: 50%;
+    }
+}
